@@ -20,15 +20,19 @@
     }
 
     #costs {
-      background-color: #d9e0e8;
+      background-color: #e1e9f0;
     }
 
     #financial-aid {
-      background-color: #bec8d6;
+      background-color: #cdd6e1;
+    }
+
+    #future-costs {
+      background-color: #b9c3d2;
     }
 
     #specific-schools {
-      background-color: #c3cfe2;
+      background-color: #a5b0c3;
     }
 
     .full-height {
@@ -50,6 +54,24 @@
     h1.c1 {
       padding-top: 50px;
     }
+    
+    .bg-introduction {
+    background-color: #f5f7fa;
+  }
+
+  .bg-costs {
+    background-color: #e1e9f0;
+  }
+
+  .bg-financial-aid {
+    background-color: #cdd6e1;
+  }
+  .bg-future-costs {
+      background-color: #b9c3d2; 
+    }
+  .bg-specific-schools {
+    background-color: #a5b0c3;
+  }
   </style>
 </head>
 <body>
@@ -62,13 +84,16 @@
           <a class="nav-link" href="#introduction" aria-label="Home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#costs" aria-label="Expected Costs">Expected Costs</a>
+          <a class="nav-link" href="#costs" aria-label="Historical Costs">Historical Costs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#financial-aid" aria-label="Financial Aid">Financial Aid</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#specific-schools" aria-label="Specific Schools">Specific Schools</a>
+          <a class="nav-link" href="#future-costs" aria-label="Future Costs">Future Costs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#specific-schools" aria-label="Paying it Back">Paying it Back</a>
         </li>
       </ul>
     </div>
@@ -76,7 +101,7 @@
   <!-- 
 <div class="container mt-5" id="home">
 -->
-  <div id="introduction" class="container mt-5">
+  <div id="introduction" class="container mt-5 bg-introduction">
     <h1 class="mt-5 c1">The Costs of a University Education</h1>
     <p>Welcome to our website! We help students and parents learn about university costs. With tuition fees going up and student loans becoming a big problem, it's important to know how much college will cost. This can help you choose the right school and plan your finances.</p>
     <p>We give you information on how university costs have changed over time and what has caused these changes. We also talk about financial aid and how it can make college more affordable. There are different types of aid you can get, and we'll show you how they can help.</p>
@@ -84,7 +109,7 @@
     <p>Our goal is to help you make good choices about college. By understanding the costs, you can plan better for your future and reach your goals without too much money stress. So, whether you're a student or a parent, explore our site to find helpful resources.</p>
   </div>
   <div class="container section mt-5" id="costs">
-    <h1 class="mt-5 c1">Expected Costs</h1>
+    <h1 class="mt-5 c1">Historical Costs</h1>
     <div class='tableauPlaceholder c3' id='viz1681672132577'>
       <noscript><a href='#'><img alt='Average Tution vs Room &amp; Board Costs (1980-2022) ' src='https://public.tableau.com/static/images/62/62R92NJC6/1_rss.png' class='c1'></a></noscript> <object class='tableauViz c2'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
@@ -197,6 +222,11 @@
     </script>
     <p>This chart shows a yearly historical view of financial aid by financial aid type, you may drill in for more detail</p>
   </div>
+  <div class="container mt-5 bg-future-costs" id="future-costs">
+    <!-- Future Costs content -->
+    <h1 class="mt-5 c1">Future Costs</h1>
+    <p>If the past is a reliable guide, costs are likely to change in the future.</p>
+  </div>
   <div class="container section mt-5" id="specific-schools">
     <h1 class="mt-5 c1">Paying it Back</h1>
     <p>Paying back the costs of a university education is challenging. Almost all students exit university with some debt which will need to be repaid over time. In this section we explore dimensions of payback including cost to income comparisons and estimated payback timelines.</p>
@@ -244,7 +274,7 @@
     <script type='text/javascript'>
                     var divElement = document.getElementById('viz1680559086147');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
     </script>
-    <p>Here we consider median base salary vs payback period in years to help develop an intuition for the long-term costs of specific schools.</p>
+    <p>Here we consider median base salary vs payback period in years to help develop an intuition for the long-term costs of Paying it Back.</p>
     <div class='tableauPlaceholder c3' id='viz1680564749119'>
       <noscript><a href='#'><img alt='Payback Period (Total Tuition Cost / (Average Salary * 10%)) ' src='https://public.tableau.com/static/images/Co/CollegeCost_16805574204050/PaybackPeriod/1_rss.png' class='c1'></a></noscript> <object class='tableauViz c2'>
         <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'>
